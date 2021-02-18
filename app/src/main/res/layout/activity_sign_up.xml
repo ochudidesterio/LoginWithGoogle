@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".SignUp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        style="@style/CustomCardViewStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:id="@+id/sign_up_username"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_person_24"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:id="@+id/sign_up_email"
+                android:inputType="textWebEmailAddress"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableLeft="@drawable/ic_email_24"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/sign_up_password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock_24"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Confirm password"
+                android:id="@+id/sign_up_password_confirm"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_lock_24"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:id="@+id/sign_up_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:layout_marginLeft="80dp"/>
+                <TextView
+                    android:id="@+id/sign_in_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:textColor="@color/purple_700"
+                    android:text="Sign In" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
